@@ -272,6 +272,9 @@ h6{
 /* Team */
 
 .section-team{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
     background-color: aquamarine;
 }
 
@@ -280,9 +283,19 @@ h6{
     outline: #212121 solid 2px;
 }
 
+.section-team .team-item + .team-item{
+    margin-left: 30px;
+}
 
+.main-team-title{
+    margin-bottom: 50px;
+}
 
 .team-title{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+
     font-weight: 500;
     font-size: 16px;
     line-height:1.2;
@@ -291,6 +304,9 @@ h6{
 }
 
 .profession-text{
+    padding-bottom: 30px;
+    text-align: center;
+
     font-size: 16px;
     line-height: 1.2;
 
@@ -303,15 +319,27 @@ address{
 }
 
 .page-footer{
+    padding: 60px 0;
+
     background-color: #2F303A;
 }
 
-.page-footer > .logo{
+.page-footer  .logo{
+    margin-right: 0;
+    padding: 0;
+
+    display: block;
+    margin-bottom: 20px;
     color: #ffffff;
 }
 
 .contact-item{
+    
     line-height: 1.71;
+}
+
+.contact-item:not(:last-child){
+    margin-bottom: 8px;
 }
 
 .address-link{
