@@ -34,12 +34,9 @@ a{
     text-decoration: none;
 }
 
-ul,
-p{
-    margin: 0;
-    padding: 0;
-}
 
+ul,
+p,
 h1,
 h2,
 h3,
@@ -48,6 +45,10 @@ h5,
 h6{
     margin: 0;
     padding: 0;
+}
+
+img{
+    display: block;
 }
 
 .section-title {
@@ -63,7 +64,7 @@ h6{
 }
 
 .container{
-    width: 1200px;
+    /* width: 1200px; */
     margin: 0 auto;
     
     max-width: 1200px;
@@ -76,6 +77,16 @@ h6{
     outline: 2px solid black;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height:-1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
 
 /* Header */
 
@@ -101,8 +112,9 @@ h6{
 
 
 
+
 .site-nav{
-    padding: 32px 0;
+    /* padding: 32px 0; */
 
     display: flex;
 }
@@ -114,6 +126,8 @@ h6{
 
 
 .site-nav-link{
+    padding: 32px 0;
+
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -135,18 +149,24 @@ h6{
 
 .conection{
     margin-left: auto;
-    padding: 32px 0;
+    /* padding: 32px 0; */
 
     display: flex;
 
 }
 
- .conection > .conection-item + .conection-item{
+.conection > .conection-item + .conection-item{
     margin-left: 50px;
 
 }
 
+.conection-item{
+    padding: 32px 0;
+}
+
 .conection-link{
+    padding: 32px 0;
+
     font-family: inherit;
     font-weight: 500;
     line-height: 1.14;
@@ -214,9 +234,9 @@ h6{
     justify-content: space-between;
 }
 
-.peculirities-main-title{
-    display: none;
-}
+
+
+
 
 .peculirities-item{
     /* max-width: 270px; */
@@ -355,15 +375,21 @@ address{
 .section-exampeles{
     padding-top: 94px;
     padding-bottom: 94px;
+    /* background: grey; */
 }
 
-.exemeles-title{
-    display: none;
-}
+/* .section-exampeles > .container{
+    outline:black solid 2px;
+} */
+
 
 .filters-list{
+    margin-bottom: 50px;
+
     display: flex;
     justify-content: center;
+
+    /* outline: magenta solid 2px; */
 
 }
 
@@ -373,7 +399,7 @@ address{
 
 .btn{
     padding: 6px 22px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 
     min-width: 73px;
     font-family:inherit;
@@ -399,16 +425,29 @@ address{
 }
 
 .project-list{
+    margin-left: -30px;
+    margin-bottom: -30px;
+
     display: flex;
-    flex-basis: calc((100%-60px)/3);
     flex-wrap: wrap;
+
+    /* outline:teal solid 2px; */
 }
 
 .project-item{
-    flex-basis: calc((100%-60px)/3);
+    flex-basis: calc(100% / 3 - 60px);
+
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.card-content{
+    padding: 24px 20px;
 }
 
 .title-project{
+    margin-bottom: 4px;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
@@ -423,3 +462,4 @@ address{
 
     color: var(--text-color);
 }
+
