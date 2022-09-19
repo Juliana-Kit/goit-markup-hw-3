@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -21,7 +25,7 @@
           <span class="accent">Web</span>Studio</a
         >
 
-        <nav >
+        <nav class="header-navigation">
           <ul class="site-nav list">
             <li class="header-item">
               <a href="./index.html" class="site-nav-link ">Студия</a>
@@ -32,9 +36,8 @@
             <li class="header-item">
               <a href="" class="site-nav-link">Контакты</a>
             </li>
-          </ul class="header-item">
+          </ul>
         </nav>
-      
 
         <ul class="conection list">
           <li class="conection-item">
@@ -48,13 +51,14 @@
             >
           </li>
         </ul>
-        </div>
+      </div>
+    </header>
       
     </header>
 
     <main>
       <section class="section-exampeles">
-        <h1 class="exemeles-title">Exempeles of work</h1>
+        <h1 class="visually-hidden">Exempeles of work</h1>
         <div class="container">
         <ul class="filters-list list">
           <li class="filters-item"><button type="button" class="btn">Все</button></li>
@@ -68,8 +72,11 @@
           <li class="project-item" >
             <a href="">
               <img src="./images/laptop.jpg" alt="Экран ноутбука" width="370" height="294" />
+              <div class="card-content">
+
               <h2 class="title-project">Технокряк</h2>
               <p class="text-project">Веб-сайт</p>
+              </div>
             </a>
           </li>
           <li class="project-item" >
@@ -80,51 +87,65 @@
                 width="370"
                 height="294"
               />
+              <div class="card-content">
               <h2 class="title-project">Постер New Orlean vs Golden Star</h2>
               <p class="text-project">Дизайн</p>
+              </div>
             </a>
           </li>
           
           <li class="project-item" >
             <a href="">
               <img src="./images/fish.jpg" alt="Риба-логотип" width="370" height="294" />
+              <div class="card-content">
               <h2 class="title-project">Ресторан Seafood</h2>
               <p class="text-project">Приложение</p>
+              </div>
             </a>
           </li>
           <li class="project-item" >
             <a href="">
               <img src="./images/earphones.jpg" alt="Наушники" width="370" height="294" />
+              <div class="card-content">
               <h2 class="title-project">Проект Prime</h2>
               <p class="text-project">Маркетинг</p>
+              </div>
             </a>
           </li>
           <li class="project-item" >
             <a href="">
               <img src="./images/boxes.jpg" alt="Две коробки" width="370" height="294" />
+              <div class="card-content">
               <h2 class="title-project">Проект Boxes</h2>
               <p class="text-project">Приложение</p>
+              </div>
             </a>
           </li>
           <li class="project-item" >
             <a href="">
               <img src="./images/computer.jpg" alt="Комп ютер" width="370" height="294" />
+              <div class="card-content">
               <h2 class="title-project">Inspiration has no Borders</h2>
               <p class="text-project">Веб-сайт</p>
+              </div>
             </a>
           </li>
           <li class="project-item" >
             <a href="">
               <img src="./images/magazine.jpg" alt="Открытый журнал" width="370" height="294" />
+              <div class="card-content">
               <h2 class="title-project">Издание Limited Edition</h2>
               <p class="text-project">Дизайн</p>
+              </div>
             </a>
           </li>
           <li class="project-item" >
             <a href="">
               <img src="./images/label.jpg" alt="Итикетка" width="370" height="294" />
+              <div class="card-content">
               <h2 class="title-project">Проект LAB</h2>
               <p class="text-project">Маркетинг</p>
+              </div>
             </a>
           </li>
           <li class="project-item" >
@@ -135,8 +156,10 @@
                 width="370"
                 height="294"
               />
+              <div class="card-content">
               <h2 class="title-project">Growing Business</h2>
               <p class="text-project">Приложение</p>
+              </div>
             </a>
           </li>
         </ul>
