@@ -90,6 +90,10 @@ img{
 
 /* Header */
 
+.page-header{
+    border-bottom: #ECECEC solid 1px ;
+}
+
 /* .page-header{
     background-color: aqua;
 } */
