@@ -189,7 +189,8 @@ img{
 
 .hero-title{
     max-width: 696px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
 
     font-weight: 900;
