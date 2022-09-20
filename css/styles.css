@@ -73,9 +73,6 @@ img{
     
 }
 
-.section{
-    outline: 2px solid black;
-}
 
 .visually-hidden {
     position: absolute;
@@ -228,12 +225,12 @@ img{
 
 .section-peculirities{
     padding: 94px 0;
-    background-color:teal;
+    /* background-color:teal; */
 }
 
 .peculirities{
     display: flex;
-    outline: black solid 2px;
+
     flex-wrap: wrap;
 
     justify-content: space-between;
@@ -270,16 +267,14 @@ img{
     padding-left: 30px;
 } */
 
-.section .peculirities{
-    background-color: aqua;
-}
+
 
 
 /* Exampelse */
 
 .occupation-section{
     padding-bottom: 94px;
-    background-color: beige;
+    
 }
 
 .occupation-title{
@@ -300,12 +295,12 @@ img{
     padding-top: 94px;
     padding-bottom: 94px;
     
-    background-color: aquamarine;
+    background-color: #F5F4FA;
 }
 
 .team{
     display: flex;
-    outline: #212121 solid 2px;
+    
 }
 
 .section-team .team-item + .team-item{
